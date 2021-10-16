@@ -9,7 +9,7 @@ export class FormUserDetails extends Component {
     
     continue = e => {
         e.preventDefault();
-        this.props.next.Step();
+        this.props.nextStep();
     }
     render(){
         const {values, handleChange} = this.props;
@@ -34,13 +34,24 @@ export class FormUserDetails extends Component {
             onChange={handleChange('email')}
             defaultValue={values.email} />
             <br/>
-
+            <RaisedButton
+            label="Continue"
+            primary={true}
+            style={styles.button}
+            onClick={this.continue}
+            />
             </React.Fragment>
            
         </MuiThemeProvider>
        
     );
 }
+}
+
+const styles = {
+    button: {
+        margin: 15
+    }
 }
 
 export default FormUserDetails
