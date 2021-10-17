@@ -16,26 +16,26 @@ export class FormUserDetails extends Component {
     return (
         <MuiThemeProvider>
             <React.Fragment>
-            <AppBar title="Enter User Details" />
-            <TextField hintText="Enter Your First Name" 
-            floatingLabelText="First Name"
+            <AppBar title="Dados de usuário" />
+            <TextField hintText="Informe seu nome" 
+            floatingLabelText="Nome"
             onChange={handleChange('firstName')}
             defaultValue={values.firstName} />
             <br/>
 
-            <TextField hintText="Enter Your Last Name" 
-            floatingLabelText="Last Name"
+            <TextField hintText="Informe seu Sobrenome" 
+            floatingLabelText="Sobrenome"
             onChange={handleChange('lastName')}
             defaultValue={values.lastName} />
             <br/>
 
-            <TextField hintText="Enter Your E-mail" 
-            floatingLabelText="Email"
+            <TextField hintText="Digite seu E-mail" 
+            floatingLabelText="E-mail"
             onChange={handleChange('email')}
             defaultValue={values.email} />
             <br/>
             <RaisedButton
-            label="Continue"
+            label="Continuar"
             primary={true}
             style={styles.button}
             onClick={this.continue}
