@@ -23,36 +23,36 @@ export class FormPersonalDetails extends Component {
     return (
         <MuiThemeProvider>
             <React.Fragment>
-            <AppBar title="Confirm User Data" />
+            <AppBar title="Confirmação de dados" />
         <List>
             <ListItem
-                primaryText="First Name"
+                primaryText="Nome"
                 secondaryText= {firstName} />
             <ListItem
-                primaryText="Last Name"
+                primaryText="Sobrenome"
                 secondaryText= {lastName} />
             <ListItem
-                primaryText="Email"
+                primaryText="E-mail"
                 secondaryText= {email} />
             <ListItem
-                primaryText="City"
+                primaryText="Cidade"
                 secondaryText= {city} />
             <ListItem
-                primaryText="Occupation"
+                primaryText="Profissão"
                 secondaryText= {occupation} />
             <ListItem
-                primaryText="Bio"
+                primaryText="Biografia"
                 secondaryText= {bio} />
         </List>
            <br/>
             <RaisedButton
-            label="Confirm & Continue"
+            label="Confirmar e continuar"
             primary={false}
             style={styles.button}
             onClick={this.continue}
             />
             <RaisedButton
-            label="Back"
+            label="Editar"
             primary={false}
             style={styles.button}
             onClick={this.back}
