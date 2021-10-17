@@ -22,33 +22,33 @@ export class FormPersonalDetails extends Component {
     return (
         <MuiThemeProvider>
             <React.Fragment>
-            <AppBar title="Enter Personal Details" />
-            <TextField hintText="Enter Your Occupation" 
-            floatingLabelText="Occupation"
+            <AppBar title="Dados pessoais" />
+            <TextField hintText="Sua profissão" 
+            floatingLabelText="Profissão"
             onChange={handleChange('occupation')}
             defaultValue={values.occupation} />
             <br/>
 
-            <TextField hintText="Enter Your City" 
-            floatingLabelText="City"
+            <TextField hintText="Sua Cidade" 
+            floatingLabelText="Cidade"
             onChange={handleChange('city')}
             defaultValue={values.city} />
             <br/>
 
-            <TextField hintText="Enter Your Bio" 
-            floatingLabelText="Bio"
+            <TextField hintText="Fale um pouco sobre você" 
+            floatingLabelText="Biografia"
             onChange={handleChange('bio')}
             defaultValue={values.bio} />
             <br/>
             <RaisedButton
-            label="Continue"
+            label="Continuar"
             primary={true}
             style={styles.button}
             onClick={this.continue}
             />
 
             <RaisedButton
-            label="Back"
+            label="Voltar"
             primary={false}
             style={styles.button}
             onClick={this.back}
