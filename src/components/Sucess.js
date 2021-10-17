@@ -19,14 +19,11 @@ export class Sucess extends Component {
     return (
         <MuiThemeProvider>
             <React.Fragment>
-            <AppBar title="Sucess." />
-            <h1>Thank You For You Submision</h1>
-            <p>You Will get an Email with further instructions</p>
-            
+            <AppBar title="Enviado com Sucesso" />
+            <h1>Obrigado pela sua inscrição</h1>
+            <h3>Você receberá um e-mail em breve. Fique de olho na sua caixa de entrada.</h3>            
             </React.Fragment>
-           
         </MuiThemeProvider>
-       
     );
 }
 }
